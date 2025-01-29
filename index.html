@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WASP</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('background.png') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 600px;
+        }
+        .icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+        .icon:hover {
+            transform: scale(1.1);
+        }
+        .footer {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+        .footer a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="wasp_logo.png" alt="WASP Logo" height="80">
+        WASP
+    </div>
+    <div class="content">
+        <div class="icon">💻<br>WEB DEVELOPMENT</div>
+        <div class="icon">🔒<br>CYBERSECURITY</div>
+        <div class="icon">📢<br>Outreach</div>
+        <div class="icon">📣<br>Marketing</div>
+        <div class="icon">📊<br>Data Science</div>
+        <div class="icon">🎮<br>Game Development</div>
+    </div>
+    <div class="footer">
+        <a href="https://www.instagram.com/owasp_tiet/?hl=en" target="_blank">📷</a>
+        <a href="https://www.facebook.com/owasptsc/" target="_blank">📘</a>
+        <a href="https://in.linkedin.com/company/owasp-tiet" target="_blank">🔗</a>
+    </div>
+</body>
+</html>
 
