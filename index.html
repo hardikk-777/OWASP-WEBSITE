@@ -13,38 +13,35 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            color: white;
-            text-align: center;
-            font-family: Arial, sans-serif;
+            position: relative;
         }
+
         .footer {
             position: absolute;
-            bottom: 50px; /* Adjust as needed */
+            bottom: 50px; /* Adjust based on the icon positions in your background */
             display: flex;
-            gap: 30px;
+            gap: 50px;
         }
+
         .footer a {
-            color: white;
-            font-size: 30px;
-            text-decoration: none;
-        }
-        .footer img {
-            width: 40px; /* Adjust size of icons */
+            width: 40px;  /* Match the size of the icons in the background */
             height: 40px;
+            display: block;
+            position: absolute;
         }
+
+        /* Adjust these positions to match where your icons are in the background */
+        .instagram { left: -60px; } /* Move left/right based on actual position */
+        .facebook { left: 0px; }
+        .linkedin { left: 60px; }
+
     </style>
 </head>
 <body>
     <div class="footer">
-        <a href="https://www.instagram.com/owasp_tiet/?hl=en" target="_blank">
-            <img src="instagram_logo.png" alt="Instagram">
-        </a>
-        <a href="https://www.facebook.com/owasptsc/" target="_blank">
-            <img src="facebook_logo.png" alt="Facebook">
-        </a>
-        <a href="https://in.linkedin.com/company/owasp-tiet" target="_blank">
-            <img src="linkedin_logo.png" alt="LinkedIn">
-        </a>
+        <a href="https://www.instagram.com/owasp_tiet/?hl=en" target="_blank" class="instagram"></a>
+        <a href="https://www.facebook.com/owasptsc/" target="_blank" class="facebook"></a>
+        <a href="https://in.linkedin.com/company/owasp-tiet" target="_blank" class="linkedin"></a>
     </div>
 </body>
 </html>
