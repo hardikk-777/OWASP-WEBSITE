@@ -12,70 +12,39 @@
             height: 100vh;
             display: flex;
             justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            align-items: flex-end;
             color: white;
             text-align: center;
             font-family: Arial, sans-serif;
         }
-        .logo {
-            font-size: 3rem;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .content {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 10px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            max-width: 600px;
-        }
-        .icon {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            cursor: pointer;
-            padding: 10px;
-            transition: transform 0.3s;
-        }
-        .icon:hover {
-            transform: scale(1.1);
-        }
         .footer {
-            margin-top: 20px;
+            position: absolute;
+            bottom: 50px; /* Adjust as needed */
             display: flex;
-            gap: 15px;
+            gap: 30px;
         }
         .footer a {
             color: white;
-            font-size: 24px;
+            font-size: 30px;
             text-decoration: none;
+        }
+        .footer img {
+            width: 40px; /* Adjust size of icons */
+            height: 40px;
         }
     </style>
 </head>
 <body>
-    <div class="logo">
-        <img src="wasp_logo.png" alt="WASP Logo" height="80">
-        WASP
-    </div>
-    <div class="content">
-        <div class="icon">💻<br>WEB DEVELOPMENT</div>
-        <div class="icon">🔒<br>CYBERSECURITY</div>
-        <div class="icon">📢<br>Outreach</div>
-        <div class="icon">📣<br>Marketing</div>
-        <div class="icon">📊<br>Data Science</div>
-        <div class="icon">🎮<br>Game Development</div>
-    </div>
     <div class="footer">
-        <a href="https://www.instagram.com/owasp_tiet/?hl=en" target="_blank">📷</a>
-        <a href="https://www.facebook.com/owasptsc/" target="_blank">📘</a>
-        <a href="https://in.linkedin.com/company/owasp-tiet" target="_blank">🔗</a>
+        <a href="https://www.instagram.com/owasp_tiet/?hl=en" target="_blank">
+            <img src="instagram_logo.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/owasptsc/" target="_blank">
+            <img src="facebook_logo.png" alt="Facebook">
+        </a>
+        <a href="https://in.linkedin.com/company/owasp-tiet" target="_blank">
+            <img src="linkedin_logo.png" alt="LinkedIn">
+        </a>
     </div>
 </body>
 </html>
-
